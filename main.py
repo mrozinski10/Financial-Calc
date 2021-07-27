@@ -24,8 +24,7 @@ with colInput2:
     st.subheader("Time")
     t1 = st.number_input("Enter the years: ", min_value=0.0, format='%f')
 
-st.header("Future Value")
-if k1 != 0:
+if pmt1 != 0 and r1 !=0 and k1 != 0 and t1 != 0:
     fv1 = pmt1*(((1+r1/k1)**(k1*t1))-1)/(r1/k1)
     fvr1 = round(fv1,2)
     fvf1 = "{:,}".format(fvr1)
@@ -71,8 +70,7 @@ with colInput4:
     st.subheader("Time")
     t2 = st.number_input("Enter the number of years: ", min_value=0.0, format='%f')
 
-st.header("Payment/Deposit Amount")
-if k2 != 0 and t2!=0:
+if fv2 != 0 and r2 !=0 and k2 != 0 and t2 != 0:
     pmt2 = fv2*(r2/k2)/(((1+r2/k2)**(k2*t2))-1)
     pmtr2 = round(pmt2,2)
     pmtf2 = "{:,}".format(pmtr2)
@@ -103,8 +101,7 @@ with colInput6:
     st.subheader("Time")
     t3 = st.number_input("Enter amount of years: ", min_value=0.0, format='%f')
 
-st.header("Future Value")
-if k3 != 0:
+if pmt3 != 0 and r3 !=0 and k3 != 0 and t3 != 0:
     pv1 = pmt3*(1-((1+r3/k3)**(-k3*t3)))/(r3/k3)
     pvr1 = round(pv1,2)
     pvf1 = "{:,}".format(pvr1)
@@ -152,8 +149,7 @@ with colInput8:
     st.subheader("Time")
     t4 = st.number_input("Enter the amount of years: ", min_value=0.0, format='%f')
 
-st.header("Future Value")
-if k4 != 0 and t4 != 0:
+if pv2 != 0 and r4 !=0 and k4 != 0 and t4 != 0:
     pmt4 = pv2*(r4/k4)/(1-((1+r4/k4)**(-k4*t4)))
     pmtr4 = round(pmt4,2)
     pmtf4 = "{:,}".format(pmtr4)
