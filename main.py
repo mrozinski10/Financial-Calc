@@ -175,3 +175,9 @@ if pv2 != 0 and r4 !=0 and k4 != 0 and t4 != 0:
                       yaxis_title='Amount($)')
 
     st.plotly_chart(fig, use_container_width=True)
+    
+    st.write("This applet was created by Mike Rozinski.")
+
+    st.write("Content on this applet is licensed under a "
+             "[Creative Commons Attribution-Share Alike 4.0 International License.]"
+             "(http://creativecommons.org/licenses/by-sa/4.0/)")
